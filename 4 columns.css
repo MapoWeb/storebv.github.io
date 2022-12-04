@@ -1,0 +1,193 @@
+@import url(//db.onlinewebfonts.com/c/7993791590584c5850e664c4160f751c?family=Kelson);
+*{
+    box-sizing: border-box;
+    margin: 0 0;
+  }
+  body{
+    background-color: #C1AE9D;
+  }
+  section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 15px 50px 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    background-color: #C1AE9D;
+  }
+  .hh2{
+    width: 100%;
+    color: rgb(2, 2, 2);
+    font-family: monospace;
+    height: 50px;
+    text-align: center;
+    padding: 15px 0 0 20px;
+    background-color: rgb(236, 234, 234);
+    margin: 0;
+  }
+  .card{
+    width: 20%;
+    height: 470px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: white;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    /*box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;*/
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+  }
+  /* Estilo A */
+  .estilo-a{
+    font-family: kelson;
+  }
+  h4{
+      text-align: center;
+  }
+  .menu{
+    display: flex;
+	  justify-content: center;
+	  height: 50px;
+	  align-items: center;
+  	justify-content: center;
+    text-decoration: none;
+    background-color: #d4c3b3;
+  }
+  .menu__in a{
+    color: black;
+	  font-family: Kelson;
+	  text-decoration: none;
+	  align-items: center;
+	  padding: 0 100px;
+  }
+  .p-nombre{
+    text-align: center;
+  }
+  .estilo-a a{
+    text-decoration: none;
+    color: black;
+  }
+  /*.estilo-a a:hover{
+    text-decoration: underline;
+  }*/
+  .estilo-a .img-container{
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+  }
+  .estilo-a .img-container img{
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    transition: all 1.2s;
+    margin-left: 75px;
+  }
+  .estilo-a:hover .img-container img{
+    transform: scale(1.8);
+    cursor: pointer;
+  }
+  .bar-menu{
+    text-decoration: none;
+    font-family: kelson;
+    width: 100%;
+    color: rgb(2, 2, 2);
+    padding: 40px 0 0 30px;
+  }
+  .bar-menu:hover{
+    color: rgb(255, 255, 255);
+  }
+  .bar-menu:active{
+    font-size: 20px;
+  }
+
+/*clic*/
+#evento-click{
+  display: none;
+}
+#evento-click:hover{
+  cursor: pointer;
+}
+.container__modal{
+  max-width: 600px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  padding-bottom: 250px;
+  text-align: center;
+  /*top: -30px;*/
+  /*left: 20%;*/
+  /*margin: 30px 10px;*/
+  /*transform: translate(-50%, -50%);*/
+  box-shadow: -10px 0px 30px -20px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  visibility: hidden;
+  transition: all 300ms;
+  z-index: 1;
+  margin-top: 0;
+  cursor: auto;
+}
+/*talla*/
+/*.talla{
+  visibility: hidden;
+  text-align: center;
+  font-family: kelson
+}
+a:hover .talla{
+  visibility: visible;
+}
+.card:hover{
+  height: 473px;
+}
+
+/***************/
+.img{
+  visibility: visible;
+}
+#evento-click:checked ~ .container__modal{
+  visibility: visible;
+}
+#evento-click:checked ~ .img{
+  visibility: hidden;
+}
+.header__modal{
+  /*text-align: right;*/
+  z-index: 10;
+  padding-right: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  visibility: hidden;
+}
+#evento-click:checked ~ .header__modal{
+  visibility: visible;
+}
+/*resposive*/
+@media screen and (max-width:500px){
+  .card{
+    width: 80%;
+    height: 303px;
+  }
+  .estilo-a .img-container{
+    width: 80%;
+    height: 230px;
+    
+    
+  }
+  .estilo-a .img-container img{
+    position: unset;
+    width: 180px;
+    margin-left: 70px;
+    padding-top: 30px;
+    
+  }
+  .estilo-a{
+    margin-top: 20px;
+  }
+  section{
+    padding: 0px 0 0;
+  }
+  .menu__in a{
+    padding: 0 5px;
+  }
+  .talla{
+    visibility: visible;
+  }
+}
