@@ -6,7 +6,7 @@
 	padding: 0;
 }
 body{
-	background-image: url(/img/Fonde\ \(1\).jpg);
+	background-image: url(./img/Fonde\ \(1\).jpg);
 	width: 100%;
 	/*height: 917px;*/
 	background-size: cover;
