@@ -63,7 +63,7 @@ header{
 	}
 	body{
 		background-repeat: no-repeat;
-		background-image: url(/img/Fondo-phone.jpg);
+		background-image: url(./img/Fondo-phone.jpg);
 		background-position-x: center;
 	}
 }
